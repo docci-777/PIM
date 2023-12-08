@@ -35,8 +35,6 @@ def get_params():
     parser.add_argument('--name', default='', type=str)
     parser.add_argument('--nn', default='vit_base_patch16_224', type=str)
     parser.add_argument('--batch_size', default=100, type=int)
-    parser.add_argument('--dataset', default='ImageNet', type=str)
-    parser.add_argument('--data_dir', default='~/projects/ImageNet1k', type=str)
     parser.add_argument('--workers', default=16, type=int)
     parser.add_argument('--eps', default=16 / 255, type=float)
     parser.add_argument('--alpha', default=2 / 255, type=float)
