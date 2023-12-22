@@ -186,7 +186,7 @@ class PIM(Base_Attack):
                 if self.diversity_prob > 0:
                     # DI
                     augmented_inputs = self.input_diversity(augmented_inputs)
-                # RI
+                # PI
                 augmented_inputs = self.shuffle(augmented_inputs, augmented_inputs.size(-1), patch_size, num)
                 loss_label = torch.cat([labels] * (augmented_inputs.shape[0] // inputs.shape[0]), dim=0)
                 logits = self.model(augmented_inputs)
