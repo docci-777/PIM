@@ -1,6 +1,15 @@
 # PIM
 PERMUTATION-INVARIANT ATTACKS
 
+## Environments
+The experiments in the paper are conducted under the following environment:
+* Python 3.9.13
+* Pytorch 1.12.1
+* Torchvision 0.13.1
+* Timm 0.9.2
+* Numpy 1.21.5
+* Einops 0.7.0
+  
 ### Key parameters
 ```--nn```: Network architecture.
 
